@@ -1,8 +1,6 @@
 name: Daily Slack Reminder
 
 on:
-  schedule:
-    - cron: '30 4 * * *'   # 10:00 AM IST
   workflow_dispatch:
 
 jobs:
@@ -14,8 +12,4 @@ jobs:
         run: |
           curl -X POST "${{ secrets.SLACK_WEBHOOK_URL }}" \
           -H "Content-Type: application/json" \
-          --data @- <<'EOF'
-          {
-            "text": "🌞 Good Morning Team!\n\nPlease share your daily work updates before 10:20 AM\n\n1. Yesterday's Work:\n2. Today's Plan:\n3. Any Blockers:\n\nThank you!"
-          }
-          EOF
+          -d '{"text":"Test message from GitHub Actions ✅"}'
