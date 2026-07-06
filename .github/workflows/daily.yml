@@ -14,6 +14,8 @@ jobs:
         run: |
           curl -X POST "${{ secrets.SLACK_WEBHOOK_URL }}" \
           -H "Content-Type: application/json" \
-          --data '{
-            "text":"🌞 *Good Morning Team!*\n\nPlease share your daily work updates before *10:20 AM*.\n\n*1. Yesterday'\''s Work:*\n•\n\n*2. Today'\''s Plan:*\n•\n\n*3. Any Blockers:*\n•\n\nThank you! 🙌"
-          }'
+          --data @- <<'EOF'
+          {
+            "text": "🌞 Good Morning Team!\n\nPlease share your daily work updates before 10:20 AM\n\n1. Yesterday's Work:\n2. Today's Plan:\n3. Any Blockers:\n\nThank you!"
+          }
+          EOF
