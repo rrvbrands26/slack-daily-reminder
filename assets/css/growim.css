@@ -1777,7 +1777,7 @@ h6 {
 .team-four__top {
   display: flex;
   align-items: flex-end;
-  justify-content: space-around;
+  justify-content:center;
   position: relative;
   margin: 0 0 48px;
 }
