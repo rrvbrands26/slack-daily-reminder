@@ -12297,13 +12297,13 @@ body.megamenu-popup-active .mobile-nav__content {
 .page-header {
   background-color: var(--growim-black, #17012C);
   position: relative;
-  padding-top: 284px;
-  padding-bottom: 130px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 @media (max-width: 767px) {
   .page-header {
-    padding-top: 180px;
-    padding-bottom: 90px;
+    padding-top:90px;
+    padding-bottom: 50px;
   }
 }
 .page-header__bg {
@@ -17564,7 +17564,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 @media (max-width: 767px) {
   .service-details {
-    padding: 80px 0;
+    padding: 30px 0;
   }
 }
 .service-details__thumbnail {
@@ -19285,6 +19285,8 @@ body.megamenu-popup-active .mobile-nav__content {
   position: relative;
   z-index: 1;
   padding: 112px 0 114px;
+  width: 100vw;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .slide-text {
