@@ -17564,7 +17564,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 @media (max-width: 767px) {
   .service-details {
-    padding: 30px 0;
+    padding: 80px 0;
   }
 }
 .service-details__thumbnail {
