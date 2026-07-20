@@ -3600,7 +3600,7 @@ h6 {
   border-top: 1px solid rgba(var(--growim-white-rgb, 255, 255, 255), 0.2);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media (max-width: 767px) {
   .main-footer__bottom__inner {
@@ -5487,7 +5487,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 @media (max-width: 767px) {
   .why-choose-one {
-    padding: 80px 0;
+    padding: 40px 0;
   }
 }
 .why-choose-one__shape-one {
@@ -12541,6 +12541,7 @@ body.megamenu-popup-active .mobile-nav__content {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
 .client-carousel__one__item img {
   transition: all 500ms ease;
@@ -15146,7 +15147,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 @media (max-width: 767px) {
   .about-one {
-    padding: 80px 0;
+    padding: 40px 0;
   }
 }
 .about-one__shape-one {
@@ -17581,6 +17582,14 @@ body.megamenu-popup-active .mobile-nav__content {
   font-weight: 800;
   margin-bottom: 26px;
 }
+
+.service-details__sub_title {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
 .service-details__text {
   margin: 0 0 28px;
 }
@@ -17599,12 +17608,34 @@ body.megamenu-popup-active .mobile-nav__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.service-details__list1 {
+  position: relative;
+  padding: 0 0 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+
 @media (max-width: 767px) {
   .service-details__list {
     display: block;
   }
 }
 .service-details__list li {
+  position: relative;
+  margin: 0;
+  line-height: 32px;
+  font-weight: 500;
+  color: var(--growim-black, #17012C);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 0 0 12px;
+}
+.service-details__list1 li {
   position: relative;
   margin: 0;
   line-height: 32px;
@@ -17626,6 +17657,18 @@ body.megamenu-popup-active .mobile-nav__content {
   font-size: 12px;
   background-color: var(--growim-primary, #635AD9);
   color: var(--growim-white, #fff);
+}
+.service-details__list1 li i {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 12px;
+  background-color: var(--growim-primary, #635AD9);
+  color: var(--growim-white, #fff);
+
 }
 
 /*--------------------------------------------------------------
